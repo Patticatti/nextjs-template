@@ -16,12 +16,7 @@ const variants: Record<NonNullable<ButtonProps["variant"]>, string> = {
 
 export default function Button({ href, children, variant = "default" }: ButtonProps) {
   return (
-    <Link
-      className={variants[variant]}
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <Link className={variants[variant]} href={href} target="_blank" rel="noopener noreferrer">
       {children}
     </Link>
   );
